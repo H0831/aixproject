@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is AI</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --text-color: #333;
+            --background-color: #f5f7fa;
+            --card-background: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--primary-color);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+
+        ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .conclusion {
+            background: #e8f0fe;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>인공지능은 세상을 어떻게 인식하나?</h1>
+        <hr>
+        <p>인간이 오감(시각, 청각, 촉각, 후각, 미각)을 통해 세상을 인식하듯이, AI는 데이터를 입력받아 세상을 "인식"합니다. 하지만 AI의 인식 방식은 인간과 근본적으로 다릅니다. 다음은 AI의 인식 방식에 대한 간략한 설명입니다:</p>
+        <ol>
+            <li><strong>데이터 입력</strong>: AI는 센서, 텍스트, 이미지, 음성, 비디오 등 다양한 형태의 데이터를 입력받습니다. 예를 들어, 카메라로 촬영한 이미지는 픽셀 데이터로, 마이크로 녹음된 소리는 음파 데이터로 변환되어 AI에 입력됩니다.</li>
+            <li><strong>패턴 인식</strong>: AI는 주로 딥러닝 모델(예: 신경망)을 사용해 데이터에서 패턴을 학습하고 인식합니다. 예를 들어, 이미지 인식 AI는 수백만 장의 이미지를 학습해 고양이와 강아지를 구분하는 패턴을 익힙니다.</li>
+            <li><strong>수치적 처리</strong>: AI는 데이터를 수치(숫자)로 변환해 처리합니다. 인간이 색, 소리, 냄새를 직관적으로 느끼는 반면, AI는 이러한 정보를 벡터, 행렬 같은 수학적 표현으로 변환해 분석합니다.</li>
+            <li><strong>한계와 차이</strong>: 
+                <ul>
+                    <li>AI는 인간처럼 주관적 경험(예: 냄새의 "좋음"이나 소리의 "감동")을 느끼지 못합니다. 단지 데이터를 기반으로 패턴을 분석하고 결과를 도출할 뿐입니다.</li>
+                    <li>AI의 "인식"은 학습 데이터와 알고리즘에 의존하기 때문에, 데이터가 부족하거나 편향되면 잘못된 결론을 내릴 수 있습니다.</li>
+                </ul>
+            </li>
+            <li><strong>특화된 인식</strong>: 특정 AI는 특정 입력에 특화되어 있습니다. 예를 들어, 음성 인식 AI(시리, 알렉사)는 오디오 데이터를, 컴퓨터 비전 AI는 이미지 데이터를 주로 처리합니다. 인간처럼 모든 감각을 통합적으로 인식하는 범용 AI는 아직 연구 단계입니다.</li>
+        </ol>
+        <p class="conclusion">결론적으로, AI는 인간의 오감과 유사한 방식으로 세상을 직접 느끼지 않고, 데이터를 수치적으로 분석해 패턴을 인식하는 방식으로 세상을 이해합니다. 이 과정은 인간의 직관적 경험과는 다르며, 더 기계적이고 데이터 중심적입니다.</p>
+    </div>
+</body>
+</html>
