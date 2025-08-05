@@ -30,7 +30,7 @@ with col1:
     with st.expander('SubContent3...'):
         st.subheader('HTML Content...')
         import streamlit.components.v1 as htmlviewer
-        with open('./htmls/index copy.html', 'r', encoding='utf-8') as f:
+        with open('./htmls/책_안의_문제랑_놀자![빅데이터_분석편]___십대를_위한_다정한_미래과학_html.html', 'r', encoding='utf-8') as f:
             html1 = f.read()
             f.close()
         htmlviewer.html(html1, height=800)
@@ -67,4 +67,5 @@ with col1:
 
 with col2:
     with st.expander('Tips...'):
+
         st.info('Tips.........')
